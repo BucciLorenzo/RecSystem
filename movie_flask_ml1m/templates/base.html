@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie4You</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_new.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Recommender Systems based on multimedia content: Movie for you</h1>
+        <img src="static/logo_swap.png" style="max-width: 100px; max-height: 40px; width: auto; height: auto;">
+    </header>
+
+    <main>
+        <div class="container">
+            {% block content %}
+
+            <p style="white-space: nowrap; font-size: 18px;">
+                
+            </p>
+            {% endblock %}
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; https://github.com/BucciLorenzo/tesi_movie_flask_ml1m.git - Tesi di Laurea ITPS - Lorenzo Bucci</p>
+    </footer>
+</body>
+</html>
